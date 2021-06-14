@@ -1,0 +1,14 @@
+@import "./SASS/sign-up-in";
+@import "./SASS/bookingForm";
+@import "./SASS/dashboard";
+* {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", "Raleway";
+}
+
+.formbox {
+  @include formBox;
+}

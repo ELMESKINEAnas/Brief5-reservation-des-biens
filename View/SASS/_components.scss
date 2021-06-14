@@ -1,0 +1,54 @@
+@mixin formBox {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 30px;
+}
+
+@mixin formInput {
+  height: 40px;
+  width: 100%;
+  border-width: 0px 0px 2px;
+  border-color: #f2a68f;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  transition: ease-in-out 0.3s;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    border-color: #bc4123;
+  }
+}
+
+@mixin labels {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 5px 0;
+  transition: ease-in-out 0.3s;
+
+  &:hover {
+    color: #bc4123;
+  }
+}
+
+@mixin buttons {
+  width: fit-content;
+  padding: 10px 25px;
+  border-width: 0px;
+  font-family: poppins;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #6c4079;
+  transition: ease-in-out 0.3s;
+  border-radius: 5px;
+
+  &:hover {
+    color:black;
+  }
+}

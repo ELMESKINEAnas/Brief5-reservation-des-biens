@@ -1,0 +1,61 @@
+@import "./components";
+
+.dashboard-bg {
+  min-height: 100vh;
+  background: linear-gradient(rgb(199, 81, 70), rgb(84, 8, 4));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+.dashboard {
+  width: 70%;
+}
+
+.dashboard-header {
+  margin: 80px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  h1 {
+    color: #bc4123;
+    margin-bottom: 20px;
+  }
+}
+
+.dash-details {
+  justify-self: end;
+
+  h4 {
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+
+  button {
+    float: right;
+  }
+}
+
+.box {
+  margin: 40px 0;
+}
+
+.white-backgroud {
+  background-color: white;
+  padding: 30px;
+}
+
+.booking-nmbr {
+  padding: 10px 30px;
+  background-color: #d77053;
+  font-size: 25px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.booking-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}

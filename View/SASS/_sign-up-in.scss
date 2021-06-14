@@ -1,0 +1,64 @@
+@import "./components";
+
+section {
+  height: auto;
+  background: linear-gradient( to top right, #fc2c77 0%, #6c4079 100%);
+  display: flex;
+  flex-direction: column;
+  //   justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 25%;
+}
+
+.login-input {
+  @include formInput;
+}
+
+label {
+  @include labels;
+}
+
+.input-row {
+  margin-bottom: 30px;
+
+  &:hover {
+    border-color: #bc4123;
+  }
+}
+
+.choice {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.sign-up,
+.sign-in {
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+  width: 50%;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+}
+
+.sign-in {
+  background-color: #bc4123;
+}
+
+.sign-up {
+  background-color: #f08c6e;
+}
+
+.form-btn {
+  @include buttons;
+  margin-top: 20px;
+}
